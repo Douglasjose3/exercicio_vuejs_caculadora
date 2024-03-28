@@ -32,8 +32,8 @@ import Results from './components/Results.vue';
   <header>
     <div class="container">
       <Cabecalho />
-      <Operation :operacao="evento => estado.operadores = evento.target.value" :num1="evento => estado.numero1 = evento.target.value" :num2="evento => estado.numero2 = evento.target.value"></Operation>
-      <Results :num1="estado.numero1" :num2="estado.numero2" :result="resultado()" />
+      <Operation :operacao="evento => estado.operadores = evento.target.value" :numero1="evento => estado.numero1 = evento.target.value" :numero2="evento => estado.numero2 = evento.target.value"></Operation>
+      <Results :numero1="estado.numero1" :numero2="estado.numero2" :result="resultado()" />
     </div>
   </header>
 </template>
